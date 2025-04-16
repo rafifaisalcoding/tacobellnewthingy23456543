@@ -1,127 +1,59 @@
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  min-height: 150vh;
+  background: #f4f4f9;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding-top: 100px;
-  background: linear-gradient(-45deg, #702082, #FF34B3, #9C27B0, #E91E63);
-  background-size: 400% 400%;
-  animation: gradientBG 8s ease infinite;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-h1, h2 {
-  font-family: 'Poppins', sans-serif;
-  margin: 10px 0;
+.container {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
 }
 
 h1 {
-  font-size: 2.5em;
-  color: #702082;
+  font-size: 2rem;
+  color: #333;
 }
 
 h2 {
-  font-size: 1.5em;
-  color: #FF34B3;
+  font-size: 1.25rem;
+  color: #555;
   margin-bottom: 20px;
 }
 
 .reward-image {
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
-.container {
-  text-align: center;
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
   width: 100%;
-  margin: 20px;
-  backdrop-filter: blur(8px);
-  transform: translateY(0);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto;
 }
 
-.container:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+.steps {
+  margin-top: 20px;
 }
 
-.hidden {
-  display: none;
+.step {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
 }
 
 .btn {
   background-color: #702082;
   color: white;
-  padding: 15px 30px;
   border: none;
-  border-radius: 8px;
+  padding: 12px 20px;
+  border-radius: 5px;
   cursor: pointer;
-  margin: 15px 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.2em;
-  font-weight: 600;
-  transition: transform 0.2s, background-color 0.2s;
-  z-index: 10;  /* Ensures the button is on top of other elements */
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
 }
 
 .btn:hover {
-  transform: scale(1.05);
-  background-color: #FF34B3;
-}
-
-.step {
-  margin: 15px 0;
-  font-size: 18px;
-  color: #333;
-  font-family: 'Poppins', sans-serif;
-  padding: 10px;
-  transition: all 0.3s ease;
-}
-
-.step:hover {
-  transform: scale(1.05);
-  color: #FF34B3;
-  font-weight: 600;
-  text-shadow: 0 0 10px rgba(255, 52, 179, 0.2);
-}
-
-/* Ensure button is clickable and not blocked by other elements */
-.btn {
-  cursor: pointer;
-  z-index: 10;
-}
-
-/* Adding responsiveness for mobile */
-@media (max-width: 768px) {
-  .container {
-    padding: 30px;
-    max-width: 90%;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
-
-  .btn {
-    font-size: 1em;
-    padding: 12px 25px;
-  }
+  background-color: #9c27b0;
 }
