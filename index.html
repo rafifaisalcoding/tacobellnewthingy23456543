@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>Claim Steps</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <div>
+  <div class="container">
+    <img src="tacobell100.png" alt="Taco Bell $100" class="reward-image">
     <h1>Feeling Hungry?</h1>
     <h2>Get a $100 Taco Bell Gift Card!</h2>
-    <div>
-      <div>1. Click to start</div>
-      <div>2. Fill your details</div>
-      <div>3. Complete quick offers</div>
-      <div>4. Get your gift card!</div>
-      <!-- Simple button -->
-      <button onclick="redirect()">Start Now</button>
+    <div class="steps">
+      <div class="step">1. Click to start</div>
+      <div class="step">2. Fill your details</div>
+      <div class="step">3. Complete quick offers</div>
+      <div class="step">4. Get your gift card!</div>
+      <button onclick="redirect()" class="btn">Start Now</button>
     </div>
   </div>
-  <script>
-    function redirect() {
-      window.location.href = 'https://glstrck.com/aff_c?offer_id=655&aff_id=88356';
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
